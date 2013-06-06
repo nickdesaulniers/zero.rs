@@ -24,6 +24,9 @@ pub trait Drop {
     fn finalize(&self);
 }
 
+#[lang="sized"]
+pub trait Sized {}
+
 // Operator overloading
 
 #[lang="eq"]
